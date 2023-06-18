@@ -1,0 +1,75 @@
+<!--
+weekly.html
+*  Description: This file contains all of the HTML code needed for the 
+*  Weekly Calendar. Displays the 7 days of a week and time slots by hour. 
+*  Represented by different "cells". Refer to script.js to see how the 
+*  repetitions of cells is handle and the functionality of the weekly 
+*  calendar.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="weekly.css">
+    <link rel="stylesheet" href="h4.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Quicksand:wght@300&family=Raleway:wght@100&display=swap" rel="stylesheet"> 
+    <title>WeeklyCalendar</title>
+    
+    <script src="weekly.js" type="module"></script>
+    <!-- <a href="../currTasks/currTask.html" ><button type="button" class="nav" style="float: right;">Tasks</button></a>
+    <a href="../month/month.html"><button type="button" class="nav" id="curr" style="float: left;">Monthly Calendar</button></a> -->
+
+</head>
+<body>
+    <!-- HEADER: Navigating Between Pages -->
+    <header>
+        <nav class="navbar"> 
+    
+            <img src="monk.png" alt="CodeMonkeyz">
+                <ul class="nav-list">
+                    <li class="list-item">
+                        <a class="first" href="../currTasks/currTask.html">MY TASKS</a>
+                    </li>
+                    <li class="list-item">
+                        <a class="second" href="../month/month.html">MONTHLY</a>
+                    </li>
+                    <li class="list-item">
+                        <a class="third" href="../week/weekly.html">WEEKLY</a>
+                    </li>
+                </ul>
+        </nav>
+    </header>
+    
+    <br>
+    <h2 id="title"> Weekly Calendar </h2>
+    <br>
+    <div class="monthy">
+        <h3 class="month-top"><div id="monthYear"></div>
+            <h3 class="day-top"><div id="weekDays"></div></h3>
+        </h3> 
+    </div>
+    <div class="grid-container">
+        <div class="grid-item time">TIME</div>
+        <div class="grid-item head" style="background-color:rgba(228, 117, 13, 0.788);" >SUN</div>
+        <div class="grid-item head" style="background-color:rgba(125, 190, 21, 0.788);">MON</div>
+        <div class="grid-item head" style="background-color:rgba(12, 131, 125, 0.788);">TUE</div>
+        <div class="grid-item head" style="background-color:rgba(22, 4, 184, 0.788);">WED</div>  
+        <div class="grid-item head" style="background-color:rgba(153, 19, 146, 0.788);">THU</div>
+        <div class="grid-item head" style="background-color:rgba(167, 164, 7, 0.788);">FRI</div>
+        <div class="grid-item head">SAT</div>  
+      </div>
+      
+      <!-- handle div repetitions using JS -->
+      <div id="repetition"> </div>
+      <br><br>
+ 
+    <footer>
+        <br>
+        <p>Code Monkeyz</p>
+    </footer>
+    
+</body>
+</html>

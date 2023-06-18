@@ -1,0 +1,144 @@
+/* 
+*  weekly.css
+*  Description: This file contains all the CSS styling used for the 
+*  weekly calendar page. 
+*/
+
+body{
+    font-family: 'Quicksand', sans-serif;
+    background-color: #e4dce4a1;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: minmax(80px, auto) repeat(7, minmax(100px, 500px));
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+.sch:hover{
+    background-color:#2039a763;
+}
+.sch-0:hover{
+    background-color:#d3945a69;
+    cursor: pointer;
+}
+.sch-1:hover{
+    background-color:#bfdd90ad;
+    cursor: pointer;
+}
+.sch-2:hover{
+    background-color:#74c4c077;
+    cursor: pointer;
+}
+.sch-3:hover{
+    background-color:#b0aae683;
+    cursor: pointer;
+}
+.sch-4:hover{
+    background-color:#d3a0cf73;
+    cursor: pointer;
+}
+.sch-5:hover{
+    background-color:#e7e6a49a;
+    cursor: pointer;
+}
+.sch-6:hover{
+    background-color:#8da7df88 ;
+    cursor: pointer;
+}
+.grid-item {
+    background-color: #d6dbe45e;
+    border: 0.01px solid #00000025;
+    text-align: center;
+    padding-top: 20px;
+    height: 40px;
+}
+.pos{
+    font-family: 'Quicksand', sans-serif;
+    background-color: #424d8a28;    
+}
+.head{
+    background-color: #28498f  ; 
+    color: white;
+    font-family: 'Quicksand', sans-serif; /* fantasy is other font,,, 'Merriweather' comp type: 'Courier New' */
+    font-size: 16px;
+    /*Just for the days */
+    /* border: hidden; */
+}
+#title{
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    padding-top: 10px;
+    /* padding-bottom: 20px; */
+    font-size: 45px;
+}
+@media (max-width: 700px) {
+    #title{
+        font-family: 'Quicksand', sans-serif;
+        padding-top: 10px;
+        /* padding-bottom: 20px; */
+        font-size: 45px;
+    }    
+}
+footer{
+        bottom: 40px;
+        padding-top: 20px ;
+        text-align: center;
+        position: relative;
+        height: 50px;
+        font-family: 'Quicksand', sans-serif;
+        color: gray;
+}
+h4{
+    font-family: 'Quicksand', sans-serif;
+    color: gray;
+    padding-left: 70px;
+}
+.time{
+    background-color: #4d6db3b4  ; 
+    font-family: 'Quicksand', sans-serif; 
+    font-size: 16px;
+}
+.monthy{
+    /* background-color: rgba(77, 109, 179, 0.507)  ;  */
+    font-family: 'Quicksand', sans-serif; 
+    margin-left: 30px;
+    margin-bottom: 15px;
+    height: 80px;
+    width: 400px;
+    border-radius: 16px;
+    align-items: left;
+    /* border: black solid; */
+}
+.month-top{
+    font-family: 'Quicksand', sans-serif; 
+    color: #4d6db3b4   ; 
+    text-align: left;
+    /* color:white; */
+    font-size: 28px;
+    margin-bottom: 6px;
+    padding: 0; 
+}
+.day-top{
+     font-size: 19px;
+    padding: 0; margin: 0;
+    text-align: center;
+    color:white;
+    background-color: #4d6db3b4 ;
+    border-radius: 20px;
+    width: 150px;
+    margin-left: 40px; 
+    
+} 
+
+.nav{
+    width: auto;
+    cursor: pointer;
+    box-shadow: 0px 0px 2px gray;
+    border: none;
+    outline: none;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    background-color:#92a1d1;
+    font-family: 'Quicksand', sans-serif;
+}
