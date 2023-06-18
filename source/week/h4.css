@@ -1,0 +1,78 @@
+/* 
+*  h4.css
+*  Description: This file contains all the CSS and styling used for the 
+*  uniform header navigation shown in all the pages of the application
+*/
+*{
+    padding:0;
+    margin:0;
+}
+.navbar{
+    background-color: #a089b6a8;
+    color:white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 18px;
+    font-family: 'Quicksand', sans-serif;
+    height:70px;
+}
+.navbar a{
+    color:rgba(61, 59, 59, 0.877);
+    text-decoration: none;
+    padding: 45px;
+    font-weight: bold;  
+}
+.first:hover{
+    color:#0c837dfb;
+}
+.second:hover{
+    color:#991392c9;
+}
+.third:hover{
+    color:white ;
+}
+.forth:hover{
+    color: #e4750dc9;
+}
+.nav-list{
+    list-style-type: none;
+}
+.nav-list .list-item{
+    display:inline-block ;
+    padding: 20px 10px;
+}
+.list-item:hover{
+    background-color: rgba(162, 145, 179, 0.521);
+    border-radius: 20px;
+}
+
+img {  
+    width: 70px;  
+    height: 55px;  
+}
+.menu{
+    display:none;
+}
+.menu-line{
+    width: 20px;
+    height: 3px;
+    background-color: black;
+    margin-bottom: 3px;
+    border-radius: 10px;
+}
+@media all and (max-width: 900px){
+    /* .menu{
+        display:block;
+        position:absolute;
+        right: 15px;
+        top: 15px;
+    } */
+    .navbar{
+        flex-direction: column;
+        height: auto;
+    }
+    .navbar a{
+        padding:8px;
+    }
+}

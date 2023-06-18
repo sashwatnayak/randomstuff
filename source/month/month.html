@@ -1,0 +1,77 @@
+<!--
+month.html
+*  Description: This file contains all of the HTML code needed for the 
+*  Monthly Calendar. Displaying all the days and of a complete month.  
+*  Refer to monthScr.js S to see how the tasks are shown and display in the 
+*  montly calendar interface.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Quicksand:wght@300&family=Raleway:wght@100&display=swap" rel="stylesheet"> 
+  <title>Monthly Calendar</title>
+  <link rel="stylesheet" href="../week/h4.css">
+  <link rel="stylesheet" href="./monthStyle.css">
+  <script src="./monthScr.js" type="module"></script>
+</head>
+<!-- <body> -->
+
+  <body class="body-cs">
+    <!-- HEADER: Navigating Between Pages -->
+    <header class="ignore">
+      <nav class="navbar"> 
+        <img src="../week/monk.png" alt="CodeMonkeyz">
+            <ul class="nav-list">
+                <li class="list-item">
+                    <a class="first" href="../currTasks/currTask.html">MY TASKS</a>
+                </li>
+                <li class="list-item">
+                    <a class="second" href="month.html">MONTHLY</a>
+                </li>
+                <li class="list-item">
+                    <a class="third" href="../week/weekly.html">WEEKLY</a>
+                    <script>localStorage.setItem('newToday', new Date());</script>
+                </li>
+            </ul>
+      </nav>
+    </header>
+    
+  <header>
+  <div class="sub">
+    <div id="monthStyle">
+      <div id="monthTitle"></div>
+      <div>
+        <button id="back">Last Month</button>
+        <button id="next">Next Month</button>
+      </div>
+    </div>
+  
+    <br>
+  
+  <div id="weekdays">
+    <div class="sun">SUN</div>
+    <div class="mon">MON</div>
+    <div class="tue">TUE</div>
+    <div class="wed">WED</div>
+    <div class="thu">THU</div>
+    <div class="fri">FRI</div>
+    <div class="sat">SAT</div>
+  </div>
+  <br>
+
+  <main id="calendar"></main>
+  <br>
+</div>
+</header>
+  
+  
+  
+  
+  
+</body>
+</html>
