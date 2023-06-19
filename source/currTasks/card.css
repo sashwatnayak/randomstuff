@@ -140,3 +140,10 @@ small {
   color: #fc0;
 }
 
+
+.task-content > img{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
