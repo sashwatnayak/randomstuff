@@ -168,9 +168,11 @@ function addTasksToDocument(tasks) {
                 <a onclick="document.getElementById('open-task${t}').style.display='none'" href="#" title="Close" class="modal-cl">x</a>
                 <br>
                 <h1 style="background-color:${color};" class="titl" >${taskData.task_name}</h1>
-                <p style="text-align:center; font-size: 30px;">new RATATOUILE trailer just leaked!</p>
+                <p style="text-align:center; font-size: 30px;">wtf was REMY cookin???</p>
                 <br>
-                <video src=../assets/template4.mp4 style="width:500px;height:700px;margin-right:50%;">
+                <video controls style="width:500px;height:500px">
+                    <source src=../assets/template4.mp4 type="video/mp4"></source>
+                </video>
             </div>
             </div>
             `;
