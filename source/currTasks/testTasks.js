@@ -12,4 +12,10 @@ second.data.duration = 1;
 second.data.priority = 5;
 second.addToLocalStorage();
 
-Task.schedule();
+const main = new Task('CLICK ME!', Task.getUniqueUID(), 13, new Date('June 27, 2023 12:00:00'))
+main.data.ddl = new Date('June 28, 2023 23:59:00');  // Deadline: November 23nd, 11:59pm 
+main.data.duration = 1;
+main.data.priority = 2;
+main.addToLocalStorage();
+
+//Task.schedule();

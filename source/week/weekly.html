@@ -12,6 +12,7 @@ weekly.html
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="weekly.css">
+    <link rel="stylesheet" href="../currTasks/card.css">
     <link rel="stylesheet" href="h4.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,6 +20,7 @@ weekly.html
     <title>WeeklyCalendar</title>
     
     <script src="weekly.js" type="module"></script>
+    <script src="actions.js" type="module"></script>
     <!-- <a href="../currTasks/currTask.html" ><button type="button" class="nav" style="float: right;">Tasks</button></a>
     <a href="../month/month.html"><button type="button" class="nav" id="curr" style="float: left;">Monthly Calendar</button></a> -->
 
@@ -65,6 +67,9 @@ weekly.html
       <!-- handle div repetitions using JS -->
       <div id="repetition"> </div>
       <br><br>
+
+      <div id="modal-open" class="modal-wind" onclick="document.getElementById('modal-open').style.display='block'">
+      </div>
  
     <footer>
         <br>
