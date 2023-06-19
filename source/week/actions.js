@@ -11,7 +11,7 @@ function init() {
 function testfunc() {
     document.getElementById("212").addEventListener("click", function open() {
         document.getElementById("212").style.backgroundColor="yellow";
-        alert("YOU CLICKED THE BOX!");
+        //alert("YOU CLICKED THE BOX!");
         creatingModal();
         location.href = "#modal-open";
 
@@ -64,12 +64,13 @@ function inputCheck() {
 
 function checkName(name) {
     var checker = name.toLowerCase();
-    if (checker == 'elise' || checker == 'elise bushnell') {
+    if (checker == 'elise' || checker == 'elise bushnell' || checker == 'elisebushnell') {
         alert('are you really her? coz I have some questions...');
         changeModal();
     }
     else {
         alert('WHAT ARE YOU DOING HERE? LEAVE!')
+        //window.location.href="weekly.html";
     }
 }
 
