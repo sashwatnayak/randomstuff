@@ -35,13 +35,14 @@ function init() {
 })();
 
 function addText() {
+    /*
     var screen = document.querySelector('.alternate');
     var text = document.createElement('p');
     text.id='change';
     text.innerHTML=`
         you fuckin made it, CONGRATULATIONS!
     `;
-    screen.appendChild(text);
+    screen.appendChild(text);*/
 
     
 }
