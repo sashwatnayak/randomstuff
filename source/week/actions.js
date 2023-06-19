@@ -40,9 +40,9 @@ function creatingModal() {
     curr.append(newEl);
     newEl.innerHTML = `
     <a onclick="document.getElementById('modal-open').style.display='none'" href="weekly.html" title="Close" class="modal-cl">x</a>
-    <h1 style="background-color:red;text-align:center" class="titl" >TIME TO VERIFY</h1>
-    <p id='para1' class="descript"><span class="effect"> WHAT IS YOUR NAME? </span> <input type="text" id="values"></input></p>
-    <button id="first" class="delete_task">SUBMIT!</button>
+    <h1 style="background-color:red;text-align:center" class="titl" >VERIFICATION TIME</h1>
+    <p id='para1' class="descript"><span class="effect" style="color:white;"> WHAT IS YOUR NAME? </span> <input type="text" id="values"></input></p>
+    <button id="first" class="delete_task" style="text-align:center;">SUBMIT!</button>
     `;
 
     inputCheck();
@@ -65,11 +65,11 @@ function inputCheck() {
 function checkName(name) {
     var checker = name.toLowerCase();
     if (checker == 'elise' || checker == 'elise bushnell' || checker == 'elisebushnell') {
-        alert('are you really her? coz I have some questions...');
+        alert('really? then I have some questions for u...');
         changeModal();
     }
     else {
-        alert('WHAT ARE YOU DOING HERE? LEAVE!')
+        alert('get out of here! you aint who im looking for');
         //window.location.href="weekly.html";
     }
 }
@@ -91,10 +91,10 @@ function changeModal() {
     container.append(newPara);
     container.append(newButton);
     newPara.innerHTML = `
-    <span class="effect"> QUESTION 1: AM I AN ALCOHOLIC? </span> <select id="value1" placeholder="select">
+    <span class="effect" style="color:white;"> QUESTION 1: AM I AN ALCOHOLIC? </span> <select id="value1" placeholder="select">
         <option selected>choose one</option>
         <option>duh</option>
-        <option>NO! Sash is a SAINT!</option>
+        <option>NO! Sash is the cleanest, purest, safest. He is a SAINT!</option>
     </select>
     `;
     newButton.innerHTML = `
@@ -105,7 +105,7 @@ function changeModal() {
     submitted.addEventListener("click",()=>{
         var ans = document.getElementById("value1").value;
         if (ans == "duh") {
-            alert('okay tbh that was easy, next one!')
+            alert('that was easy, next one!')
             counter += 1;
             changeModal2();
         }
@@ -187,7 +187,7 @@ function changeModal2() {
     container.append(newPara);
     container.append(newButton);
     newPara.innerHTML = `
-    <span class="effect"> QUESTION 2: WHO TAUGHT CSE 127 in SP23? </span> <select id="value2">
+    <span class="effect" style="color:white;"> QUESTION 2: WHO WAS OUR CSE 127 PROFESSOR? </span> <select id="value2">
         <option selected>choose one</option>
         <option>Prof. Thomas Powell, the Promised One</option>
         <option>Prof. Joseph Pasquale, the Chosen One</option>
@@ -229,11 +229,11 @@ function changeModal3() {
     container.append(newPara);
     container.append(newButton);
     newPara.innerHTML = `
-    <span class="effect"> QUESTION 3: WHAT'S THE SILLIEST THING I HAVE DONE? </span> <select id="value3">
+    <span class="effect" style="color:white;"> QUESTION 3: WHAT'S THE SILLIEST THING I HAVE DONE? </span> <select id="value3">
         <option selected>choose one</option>
         <option>stealing your champagne on your 21st</option>
         <option>getting my car towed after dragging you 150 miles</option>
-        <option>constantly finding a way to ceaselessly instigate you</option>
+        <option>constantly finding ways to ceaselessly agitate you</option>
         <option>ALL OF THEM</option>
     </select>
     `;
@@ -259,11 +259,11 @@ function changeModal3() {
 
 function checkCounter() {
     if (counter == 3) {
-        alert('... and you are still the same Elise I know ;)');
+        alert('... and you are still the same her I know');
         window.location.href="../end/end.html"
     }
     else {
-        alert('TRY AGAIN FROM THE START YOU POSER!');
+        alert('TRY AGAIN FROM THE START POSER!');
         window.location.href="weekly.html"
     }
 }

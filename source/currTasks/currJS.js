@@ -168,14 +168,9 @@ function addTasksToDocument(tasks) {
                 <a onclick="document.getElementById('open-task${t}').style.display='none'" href="#" title="Close" class="modal-cl">x</a>
                 <br>
                 <h1 style="background-color:${color};" class="titl" >${taskData.task_name}</h1>
-                <p class="descript"><span class="effect">Duration: </span>${newTaskDuration} hours</p>
-                <p class="descript"><span class="effect">Priority :</span> ${priority}</p>
-                <p class="descript"><span class="effect">Difficulty:</span> ${taskData.difficulty}/5</p>
-                <p class="descript"><span class="effect">Description:</span> ${taskData.description}</p>
-                <p class="descript"><span class="effect">Your deadline for this task is:</span>  </p>
-                <p class="deadline"> ${taskData.ddl}</p>
+                <p style="text-align:center; font-size: 30px;">new RATATOUILE trailer just leaked!</p>
                 <br>
-                <button class="delete_task">delete task</button>
+                <video src=../assets/template4.mp4 style="width:500px;height:700px;margin-right:50%;">
             </div>
             </div>
             `;
@@ -219,6 +214,7 @@ function addTasksToDocument(tasks) {
     }
 
     // Deleting Task Button within Modal
+    /*
     let deleteTask = document.querySelectorAll(".delete_task");
     for (let t = 0; t < taskList.length; t++){
         deleteTask[t].addEventListener("click",()=>{
@@ -232,7 +228,7 @@ function addTasksToDocument(tasks) {
             // Refresh page
             window.location.reload();
         })
-    }
+    }*/
     
     // Handling modal close trigger
     window.onclick = function(event) {
@@ -262,6 +258,7 @@ function addTasksToDocument(tasks) {
 * <button>.
 */
 function initFormHandler() {
+    /*
     let list = document.querySelector('#list');
     // Get a reference to the <form> element
     let form = document.querySelector('#new-task');
@@ -297,10 +294,11 @@ function initFormHandler() {
 
         // Refresh page to display task under "Current Tasks"
         window.location.reload();
-    });
+    });*/
 
     // Second form type -> Scheduling particular time slot as padding
     // Format is same as above for form 1
+    /*
     let form2 = document.querySelector('#new-padding');
     form2.addEventListener('submit', (event) => {
         let fd = new FormData(form2);
@@ -328,7 +326,7 @@ function initFormHandler() {
 
         // Refresh page to display task under "Current Tasks"
         window.location.reload();
-    });
+    });*/
 
     // Get a reference to the "Clear Local Storage" button
     let clear_stg = document.querySelector('.danger');
@@ -339,7 +337,7 @@ function initFormHandler() {
         // Delete the contents of <main>
         list.innerHTML = '';
 
-        alert("Clearing all tasks. Please re-update your preferences.");        // Alert user of changes
+        alert("only if we could REALLY do this");        // Alert user of changes
 
         // Refresh page to after clearing schedule
         window.location.reload();
@@ -354,6 +352,7 @@ function initFormHandler() {
         let noon = 12;
         let evening = 23;
         // Store new value from user input
+        /*
         if (document.querySelector('#morning').value != ""){
             morning = Number.parseInt(document.querySelector('#morning').value);
         }
@@ -364,8 +363,8 @@ function initFormHandler() {
             evening = Number.parseInt(document.querySelector('#evening').value);
         }
         // Call custom update method
-        updateSchedule(morning,noon,evening);
-        alert("Schedule Preferences Updated");              // Alert user of changes
+        updateSchedule(morning,noon,evening);*/
+        alert("Navigate to another page, you've spent enough time here");              // Alert user of changes
     });
 }
 
