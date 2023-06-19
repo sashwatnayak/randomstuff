@@ -35,15 +35,17 @@ function testfunc() {
 function creatingModal() {
     var curr = document.getElementById('modal-open');
     var newEl = document.createElement('div');
-    newEl.style="background-color:purple";
+    newEl.style="background-color:purple; text-align:center;";
     newEl.id = "boxform"
     curr.append(newEl);
     newEl.innerHTML = `
     <a onclick="document.getElementById('modal-open').style.display='none'" href="weekly.html" title="Close" class="modal-cl">x</a>
     <h1 style="background-color:red;text-align:center" class="titl" >VERIFICATION TIME</h1>
     <p id='para1' class="descript"><span class="effect" style="color:white;"> WHAT IS YOUR NAME? </span> <input type="text" id="values"></input></p>
-    <button id="first" class="delete_task" style="text-align:center;">SUBMIT!</button>
+    <button id="first" class="delete_task" style=";">SUBMIT</button>
     `;
+
+    
 
     inputCheck();
     
@@ -259,7 +261,7 @@ function changeModal3() {
 
 function checkCounter() {
     if (counter == 3) {
-        alert('... and you are still the same her I know');
+        alert('... and you are still the same you I know');
         window.location.href="../end/end.html"
     }
     else {

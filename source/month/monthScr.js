@@ -106,9 +106,17 @@ export function render() {
       if (i - paddings === today && currentMonth === 0) {
         oneday.id = 'today';
       }
+
+      if (i - paddings === 27 && currentMonth === 0) {
+        oneday.id = 'no27';
+      }
       oneday.innerText = i - paddings;
 
       let curr_day = new Date(year, month, i - paddings);
+      let dayRn= curr_day.toLocaleDateString('en-us', {
+        day: 'numeric',
+      });
+      //console.log(dayRn);
       let task_list = Task.getTasksFromDate(curr_day);
 
       //used to truncate the task_name
@@ -142,11 +150,19 @@ export function render() {
             valueweseed.push(truncate(task.data.task_name));
             let curr_event = document.createElement('div');
             curr_event.classList.add('event');
+            if (currentMonth == 0 && dayRn == 27) {
+              //console.log('FOUND EVENT ON JUNE 27th!');
+              curr_event.id='changeUp';
+              curr_event.style.background='red';
+              curr_event.innerText = truncate(task.data.task_name);
+            }
+            else {
             curr_event.innerText = truncate(task.data.task_name);
             //display the task with different color on Monthly Calendar 
             if (task.data.category.includes("school")) { curr_event.style.background = 'rgba(53, 130, 25, 0.75)'; };
             if (task.data.category.includes("personal")) { curr_event.style.background = 'rgba(20, 111, 157, 0.931)'; };
             if (task.data.category.includes("other")) { curr_event.style.background = 'rgba(146, 19, 137, 0.931)'; };
+            }
             oneday.appendChild(curr_event);
           }
 
