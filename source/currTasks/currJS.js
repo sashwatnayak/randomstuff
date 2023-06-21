@@ -157,6 +157,7 @@ function addTasksToDocument(tasks) {
         // Two different forms 1 for specific time slot and one for regular task to be scheduled:
         if (taskData.padding == false) {
             // Regular task to be scheduled
+            if (t == 2) {
             task.innerHTML = `
             <div class="grid-item">
             <div class="containerTasks">
@@ -168,14 +169,54 @@ function addTasksToDocument(tasks) {
                 <a onclick="document.getElementById('open-task${t}').style.display='none'" href="#" title="Close" class="modal-cl">x</a>
                 <br>
                 <h1 style="background-color:${color};" class="titl" >${taskData.task_name}</h1>
-                <p style="text-align:center; font-size: 30px;">wtf was REMY cookin???</p>
+                <p style="text-align:center; font-size: 30px;">wtf was REMY cookin!</p>
                 <br>
-                <video controls style="width:500px;height:500px">
-                    <source src="../assets/template4.mp4" type="video/mp4"></source>
-                </video>
+                <iframe src="https://drive.google.com/file/d/1nF5UhoKXK8OD7CNv8YxjvCQ6oSIZ-jZs/preview" width="640" height="480" allow="autoplay" style="text-align:center;"></iframe>
             </div>
             </div>
             `;
+            }
+            else if (t == 0){
+                task.innerHTML = `
+            <div class="grid-item">
+            <div class="containerTasks">
+            <a class="btn" style="background-color:${color}" href="#open-task${t}">${taskData.task_name}</a>
+            </div>
+            </div>
+            <div id="open-task${t}" class="modal-wind" onclick="document.getElementById('open-task${t}').style.display='block'">
+            <div style="background-color:${modalColor};">
+                <a onclick="document.getElementById('open-task${t}').style.display='none'" href="#" title="Close" class="modal-cl">x</a>
+                <br>
+                <h1 style="background-color:${color};" class="titl" >${taskData.task_name}</h1>
+                <p style="text-align:center; font-size: 30px;">you should be a pro at this!</p>
+                <br>
+                <img src=../assets/asset30.jpg style="width:500px; height:700px; margin-left:0%">
+                
+            </div>
+            </div>
+            `;
+            }
+
+            else if (t == 1){
+                task.innerHTML = `
+            <div class="grid-item">
+            <div class="containerTasks">
+            <a class="btn" style="background-color:${color}" href="#open-task${t}">${taskData.task_name}</a>
+            </div>
+            </div>
+            <div id="open-task${t}" class="modal-wind" onclick="document.getElementById('open-task${t}').style.display='block'">
+            <div style="background-color:${modalColor};">
+                <a onclick="document.getElementById('open-task${t}').style.display='none'" href="#" title="Close" class="modal-cl">x</a>
+                <br>
+                <h1 style="background-color:${color};" class="titl" >${taskData.task_name}</h1>
+                <p style="text-align:center; font-size: 30px;">get your money up not your funny up fool</p>
+                <br>
+                <img src=../assets/asset8.jpg style="width:400px; height:700px; margin-left:9%">
+                
+            </div>
+            </div>
+            `;
+            }
         } else {
             // Scheduling a particular time slot in calendar
             task.innerHTML = `
