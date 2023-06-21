@@ -171,7 +171,7 @@ function addTasksToDocument(tasks) {
                 <p style="text-align:center; font-size: 30px;">wtf was REMY cookin???</p>
                 <br>
                 <video controls style="width:500px;height:500px">
-                    <source src=../assets/template4.mp4 type="video/mp4"></source>
+                    <source src="../assets/template4.mp4" type="video/mp4"></source>
                 </video>
             </div>
             </div>
