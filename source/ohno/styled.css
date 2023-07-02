@@ -1,0 +1,19 @@
+*{
+    background-color: black;
+
+}
+
+ 
+ 
+.nothing{
+    text-align:center;
+    font-size: 60px;
+    color:whitesmoke;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    /*transition: 2s;*/
+}
+
+p{
+    color:aliceblue;
+}
